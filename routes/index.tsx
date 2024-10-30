@@ -1,25 +1,13 @@
-import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
-
 export default function Home() {
-  const count = useSignal(3);
   return (
-    <div class="px-4 py-8 mx-auto bg-[#86efac]">
-      <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-        <img
-          class="my-6"
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
-        />
-        <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
-      </div>
+    <div class="container mx-auto flex flex-col items-center justify-center border-blue-600 border max-w-">
+      <h1 class="text-4xl font-bold text-white">Hello World!</h1>
+      <p class="text-xl text-white">
+        This is a fresh project generated with{" "}
+        <a href="https://fresh.deno.dev" class="underline">
+          Fresh
+        </a>
+      </p>
     </div>
   );
 }
