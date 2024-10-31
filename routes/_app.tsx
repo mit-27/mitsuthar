@@ -8,7 +8,7 @@ export default function App({ Component }: PageProps) {
         <title>mitsuthar</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-[#090B16] max-w-3xl mx-auto">
+      <body class="bg-[#090B16] max-w-3xl mx-auto font-sans antialiased">
         <Component />
       </body>
     </html>
