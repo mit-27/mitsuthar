@@ -6,18 +6,20 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        "primary": "#c9d1d8",
+        "secondary": "#f5f7fa",
+      },
       fontFamily: {
         sans: [
           "Inter",
           "ui-sans-serif",
           "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
           "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI",
+          "Noto Color Emoji",
         ],
       },
     },

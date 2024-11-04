@@ -1,13 +1,14 @@
+import Introduction from "../components/introduction.tsx";
+import Projects from "../components/projects.tsx";
+
 export default function Home() {
   return (
-    <div className="min-h-screen border-red-600 border">
-      <h1 class="text-4xl font-bold text-white">Hello World!</h1>
-      <p class="text-xl text-white">
-        This is a fresh project generated with{" "}
-        <a href="https://fresh.deno.dev" class="underline">
-          Fresh
-        </a>
-      </p>
+    <div className="min-h-screen flex flex-col border border-red-500">
+      <div className="h-[250px]"></div>
+      <div className="container px-5 mx-auto mt-5 flex flex-col gap-5">
+        <Introduction />
+        <Projects />
+      </div>
     </div>
   );
 }
